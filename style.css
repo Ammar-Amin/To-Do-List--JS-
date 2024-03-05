@@ -73,6 +73,7 @@ ul li {
     cursor: pointer;
 
     position: relative;
+    word-wrap: break-word;
 }
 
 ul li::before {
