@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    width: 100%;
+.container {
+    max-width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #eb8654,#6d69b6);
+    background: linear-gradient(135deg, #eb8654, #6d69b6);
     padding: 10px;
 }
 
@@ -26,18 +26,16 @@
     margin-bottom: 30px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
     border-radius: 30px;
     padding-left: 20px;
-    margin-bottom: 25px;
-
 }
 
-input{
+input {
     flex: 1;
     border: none;
     outline: none;
@@ -47,7 +45,7 @@ input{
     font-size: 14px;
 }
 
-button{
+button {
     border: none;
     outline: none;
     background-color: #ff5945;
@@ -59,7 +57,15 @@ button{
     cursor: pointer;
 }
 
-ul li{
+#text {
+    margin: 20px 0px;
+    padding: 0px 30px;
+    border-radius: 7px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+ul li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -69,7 +75,7 @@ ul li{
     position: relative;
 }
 
-ul li::before{
+ul li::before {
     content: '';
     position: absolute;
     height: 15px;
@@ -83,10 +89,10 @@ ul li::before{
 ul li.checked {
     color: #555;
     text-decoration: line-through;
-    
+
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-color: lightgreen;
 }
 

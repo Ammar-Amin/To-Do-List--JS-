@@ -1,5 +1,7 @@
 const inputBox = document.getElementById('inputBox');
 const ul = document.querySelector('ul');
+let text = document.querySelector('#text');
+
 
 function addTask() {
     if (inputBox.value === '') {
@@ -15,15 +17,20 @@ function addTask() {
         li.appendChild(span);
     }
     inputBox.value = '';
+    text.innerHTML = '';
     saveData();  // save the data 
 }
+
+inputBox.addEventListener('input', function (e) {
+    text.innerHTML = e.target.value;
+})
 
 ul.addEventListener('click', function (e) {
 
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();  // save the data 
-    } 
+    }
     else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
         saveData();  // save the data 
