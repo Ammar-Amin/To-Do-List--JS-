@@ -1,6 +1,7 @@
 # Todo List
 
-A simple todo list application built using HTML, CSS, and JavaScript.
+A Simple ToDo List Web App built using HTML, CSS, and JavaScript. This app allows users to create, delete, and mark tasks as completed. 
+Additionally, it utilizes Local Storage to persist user data, ensuring tasks are saved even after the browser is closed.
 
 [Project Link]
 (https://ammar-amin-todolist.netlify.app/)
