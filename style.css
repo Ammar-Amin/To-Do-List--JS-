@@ -16,7 +16,7 @@
     width: 100%;
     max-width: 540px;
     margin: 100px auto;
-    padding: 40px 30px 50px;
+    padding: 40px 30px 50px 20px;
     border-radius: 10px;
 }
 
@@ -69,7 +69,6 @@ ul li {
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
-    /* user-select: none; */
     cursor: pointer;
 
     position: relative;
@@ -111,4 +110,10 @@ ul li span {
 
 ul li span:hover {
     background-color: #edeef0;
+}
+
+@media (max-width: 425px) {
+    button {
+        padding: 10px 20px;
+    }
 }
